@@ -5563,9 +5563,7 @@ static void sigHandler(int signum)
                break;
 
             default:
-               DBG(DBG_ALWAYS, "Unhandled signal %d, terminating\n", signum);
-               gpioTerminate();
-               exit(-1);
+               DBG(DBG_ALWAYS, "Unhandled user signal %d, terminating\n", signum);
          }
       }
    }
